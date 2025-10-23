@@ -20,25 +20,4 @@ textarea.addEventListener("keydown", function(e) {
   }
 })
 
-ta.addEventListener('keydown', (e) => {
-  const selStart = ta.selectionStart;
-  const selEnd = ta.selectionEnd;
-  
- 
-  const hasSelection = selStart !== selEnd;
-
-
-  if (hasSelection) {
-    const deletingKeys = [
-      'Backspace',
-      'Delete'
-    ];
-  }
-
-    const isPrintable = e.key.length === 1;
-
-    if (deletingKeys.includes(e.key) || isPrintable) {
-      e.preventDefault();
-    }
-  }
-);
+let line = 3;
